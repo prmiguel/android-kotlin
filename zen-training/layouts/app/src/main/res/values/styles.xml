@@ -7,4 +7,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.ButtonCalculator" parent="TextAppearance.AppCompat.Headline" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">36dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Calculator.Blue" parent="AppTheme.ButtonCalculator" >
+        <item name="android:background">#00537D</item>
+    </style>
+
+    <style name="AppTheme.Calculator.Red" parent="AppTheme.ButtonCalculator" >
+        <item name="android:background">#EA4D39</item>
+    </style>
 </resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".RelativeLayoutActivity">
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingTop="12dp" />
+
+    <EditText
+        android:id="@+id/input_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:paddingTop="12dp" />
+
+    <TextView
+        android:id="@+id/text_marital_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_last_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="50dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:text="Marital Status" />
+
+    <Spinner
+        android:id="@+id/spinner_marital_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_marital_status"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/marital_state_list"
+        android:paddingTop="12dp" />
+
+    <TextView
+        android:id="@+id/text_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_last_name"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/text_marital_status"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:text="Organization" />
+
+    <Spinner
+        android:id="@+id/spinner_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_role"
+        android:layout_alignLeft="@+id/text_role"
+        android:entries="@array/organizations_list"
+        android:paddingTop="12dp" />
+</RelativeLayout>
